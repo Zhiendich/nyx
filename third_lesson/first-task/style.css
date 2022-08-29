@@ -1,0 +1,24 @@
+html {
+  background-image: url("https://usa.firenews.video/wp-content/uploads/2022/03/92b85c01bdc2d022a32b0bd7c123fdb8.png");
+}
+
+p {
+  font-weight: 600;
+  line-height: 10px;
+  font-size: 14px;
+}
+.first {
+  color: #4b7592;
+}
+.second {
+  color: red;
+}
+.third {
+  color: rgb(51, 255, 97);
+}
+.forth {
+  color: hsl(305, 80%, 60%);
+}
+.fifth {
+  color: rgb(255, 252, 51, 0.7);
+}

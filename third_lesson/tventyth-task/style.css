@@ -1,0 +1,8 @@
+div {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: linear-gradient(67.5deg, green 9%, #ea82ea 25%, yellow 95%);
+}
