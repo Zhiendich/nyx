@@ -1,0 +1,18 @@
+div {
+  background-color: red;
+}
+div:first-child {
+  float: right;
+  background-color: green;
+  width: 20%;
+}
+div:nth-child(3) {
+  display: inline-block;
+  background-color: green;
+  width: 20%;
+}
+div:nth-child(4) {
+  display: inline;
+  float: right;
+  width: 80%;
+}

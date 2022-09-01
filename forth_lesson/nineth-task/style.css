@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+  width: 30px;
+}
+li > ul {
+  background-color: red;
+}
+li > ul li {
+  display: none;
+}
+li:hover > ul li {
+  display: block;
+}

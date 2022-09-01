@@ -1,0 +1,32 @@
+div {
+  min-width: 100px;
+  height: 60px;
+  color: white;
+}
+.first {
+  float: left;
+  height: 20px;
+  width: 200px;
+}
+.second {
+  float: left;
+}
+.third {
+  float: right;
+  height: 20px;
+}
+.forth {
+  float: left;
+}
+.fifth {
+  height: 20px;
+
+  float: right;
+}
+.sixth {
+  float: left;
+  height: 40px;
+}
+.seventh {
+  float: left;
+}

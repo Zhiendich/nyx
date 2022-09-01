@@ -1,0 +1,11 @@
+div {
+  display: inline;
+  width: 70px;
+  border: 2px solid black;
+}
+div:nth-child(even) {
+  float: left;
+}
+div:nth-child(odd) {
+  float: right;
+}

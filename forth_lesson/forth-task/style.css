@@ -1,0 +1,12 @@
+div > div:not(:nth-child(3)) {
+  background-color: red;
+  width: 30%;
+  height: 50px;
+}
+
+div > div:first-child {
+  float: left;
+}
+div > div:nth-child(2) {
+  float: right;
+}
