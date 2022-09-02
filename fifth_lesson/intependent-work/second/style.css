@@ -1,0 +1,25 @@
+body {
+  border: 2px solid black;
+  display: flex;
+  height: 200px;
+  max-width: 300px;
+}
+div {
+  max-width: 100px;
+  border: 2px solid black;
+}
+div:nth-child(1) {
+  align-self: flex-end;
+}
+div:nth-child(2) {
+  align-self: center;
+}
+div:nth-child(3) {
+  align-self: flex-start;
+}
+div:nth-child(4) {
+  align-self: center;
+}
+div:nth-child(5) {
+  align-self: flex-end;
+}
