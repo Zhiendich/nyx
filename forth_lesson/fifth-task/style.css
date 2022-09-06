@@ -1,17 +1,16 @@
 div:first-child > span {
   display: block;
 }
-div:first-child > span:first-child {
-  display: inline-block;
-}
+
 div:first-child > span:not(:first-child) {
   margin-left: 18px;
 }
-div:nth-child(2) > div:first-child {
-  display: inline-block;
-}
-div:nth-child(2) > div:not(:first-child) {
+
+div:nth-child(2) > div {
   margin-left: 18px;
+}
+div:nth-child(2) > div:first-child {
+  margin-top: -17px;
 }
 body > div {
   display: list-item;
@@ -20,4 +19,11 @@ body > div {
 }
 div:nth-child(3) span:nth-child(2) {
   display: inline-block;
+}
+
+div span:nth-child(odd) {
+  display: inline;
+}
+div div:nth-child(even) {
+  display: inline;
 }
