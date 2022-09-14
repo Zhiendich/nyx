@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="data:image/png;base64,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"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse list" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Главная </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./catygorys.html">Категория товаров</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./basket.html">Корзина</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div
+          class="car-search-block d-flex justify-content-between align-items-center"
+        >
+          <h3 class="">Машины</h3>
+          <div class="d-flex">
+            <input type="text" class="mr-3" />
+            <button class="btn btn-dark">Искать</button>
+          </div>
+        </div>
+
+        <div class="category-name-block">
+          <div class="category-name-card card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="img/car_flex_img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Мерседес</h5>
+              <h6>100000$</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi aut voluptatibus, magni dolor vero consectetur!
+              </p>
+              <a href="product-page.html" class="btn btn-secondary"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+          <div class="category-name-card card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="img/car_flex_img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Мерседес</h5>
+              <h6>100000$</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi aut voluptatibus, magni dolor vero consectetur!
+              </p>
+              <a href="product-page.html" class="btn btn-secondary"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+          <div class="category-name-card card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="img/car_flex_img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Мерседес</h5>
+              <h6>100000$</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi aut voluptatibus, magni dolor vero consectetur!
+              </p>
+              <a href="product-page.html" class="btn btn-secondary"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+          <div class="category-name-card card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="img/car_flex_img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Мерседес</h5>
+              <h6>100000$</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi aut voluptatibus, magni dolor vero consectetur!
+              </p>
+              <a href="product-page.html" class="btn btn-secondary"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+          <div class="category-name-card card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="img/car_flex_img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Мерседес</h5>
+              <h6>100000$</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi aut voluptatibus, magni dolor vero consectetur!
+              </p>
+              <a href="product-page.html" class="btn btn-secondary"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+          <div class="category-name-card card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="img/car_flex_img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Мерседес</h5>
+              <h6>100000$</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi aut voluptatibus, magni dolor vero consectetur!
+              </p>
+              <a href="product-page.html" class="btn btn-secondary"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="d-flex justify-content-center">
+      <ul class="nav justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Главная </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./catygorys.html">Категория товаров</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./basket.html">Корзина</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

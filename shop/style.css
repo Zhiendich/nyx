@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "Circe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Circe-Regular.ttf") format("truetype");
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header,
+footer {
+  font-family: "Circe", sans-serif;
+}
+header,
+footer {
+  background-color: #343a40;
+}
+header img,
+footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 15px;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.list ul {
+  margin-left: auto;
+}
+main {
+  min-height: 100vh;
+}
+.main-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.main-form {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #343a40;
+  color: white;
+}
+
+.form-text-part {
+  max-width: 400px;
+}
+
+form input,
+form textarea,
+form button {
+  outline: none;
+  border: 1.5px solid white;
+  margin-top: 15px;
+  padding: 10px;
+  resize: none;
+}
+
+.main-block-img {
+  width: 100%;
+}
+.contacts_block {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  padding: 20px;
+}
+.contacts_map iframe {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.benefits {
+  margin-top: 30px;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.info-title {
+}
+.info-block {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  counter-reset: num;
+  justify-content: center;
+}
+
+.info-text {
+  position: relative;
+  margin-top: 20px;
+}
+.info-text::before {
+  content: counter(num);
+  top: -40px;
+  left: 45%;
+  position: absolute;
+  counter-increment: num;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  line-height: 27px;
+}
+.category-name-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.category-name-card {
+  flex: 30%;
+  margin: 10px 0px;
+}
+.category-name-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.product-page-img {
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+}
+.product-page-text {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.car-search-block h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.product-page-bought {
+  text-align: center;
+  width: 140px;
+  margin-top: 15px;
+}
+.basket-block {
+  margin-top: 30px;
+  border: 2.5px solid black;
+  padding: 20px;
+}
+.basket-category {
+  display: flex;
+  justify-content: flex-end;
+}
+.basket-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.basket-flex:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.basket-flex h5 {
+  width: 28%;
+}
+.basket-category h6 {
+  width: 25%;
+  text-align: end;
+}
+.basket-flex img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  margin-right: auto;
+}
+.basket-name {
+  margin-left: 350px;
+}
+.black-block {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.product-name {
+  margin-right: 10px;
+}
+.price {
+  padding-left: 25px;
+}
+
+.bought-block {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.black-block::before,
+.black-block::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+.black-block::before {
+  transform: rotate(45deg);
+}
+.black-block::after {
+  transform: rotate(-45deg);
+}
+.basket-block a {
+  width: 100%;
+  margin-top: 15px;
+}
+.catygory-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.catygory {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 30%;
+}
+.catygory img {
+  max-width: 300px;
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+}
+.catygory a {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: black;
+}
+@media (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-block-img {
+    margin-top: 20px;
+    max-width: 500px;
+  }
+  .contacts_info_flex {
+    flex-direction: column;
+  }
+  .info-block {
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  .info-text {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  .category-name-card {
+    flex: 45%;
+  }
+  .category-name-card:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+  .category-name-card:nth-child(2n) {
+    margin-left: 10px;
+  }
+  .basket-category {
+    justify-content: space-between;
+  }
+  .basket-category h6 {
+    width: auto;
+    text-align: start;
+  }
+  .basket-flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card-img-top {
+    order: 2;
+    margin-top: 15px;
+    flex: 100%;
+    margin-left: auto;
+  }
+  .catygory {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-input-part {
+    width: 100%;
+    max-width: 400px;
+  }
+  .catygory {
+    flex: 100%;
+  }
+  .main-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  footer li {
+    font-size: 14px;
+  }
+  .info-text {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .category-name-card {
+    flex: 100%;
+  }
+  .category-name-card:nth-child(2n) {
+    margin-left: 0px;
+  }
+  .product-page-text {
+    font-size: 16px;
+  }
+  .product-page-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-link {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+  .product-page-text {
+    font-size: 14px;
+  }
+  .car-search-block {
+    flex-direction: column;
+  }
+  .car-search-block h3 {
+    order: 2;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .car-search-block div {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .car-search-block input {
+    width: 100%;
+  }
+}
