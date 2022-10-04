@@ -1,0 +1,12 @@
+let table = document.querySelector("#age-table");
+console.log(table);
+let labels = table.querySelectorAll("label");
+console.log(labels);
+let firstTd = table.rows[0].cells[0];
+console.log(firstTd);
+let form = document.querySelector("form[name ='search']");
+console.log(form);
+let firtsInput = form.querySelector("input");
+console.log(firtsInput);
+let allInputs = form.querySelectorAll("input");
+console.log(allInputs[allInputs.length - 1]);
